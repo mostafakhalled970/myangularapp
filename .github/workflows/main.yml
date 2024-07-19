@@ -29,8 +29,8 @@ jobs:
 
       - name: Build Docker image
         run: |
-          docker build -t my-angular-app .
+          sudo docker build -t my-angular-app .
 
       - name: Run Docker container
         run: |
-          docker run -d -p 80:80 my-angular-app
+          sudo docker run -d -p 80:80 my-angular-app
